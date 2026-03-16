@@ -1,0 +1,54 @@
+.stress-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.breathing-area {
+  position: relative;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.breathing-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--primary-light) 0%, var(--primary) 100%);
+  box-shadow: 0 0 50px rgba(99, 102, 241, 0.4);
+  position: absolute;
+}
+
+.breathing-text {
+  position: absolute;
+  z-index: 10;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  pointer-events: none;
+}
+
+.breathing-text h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.breathing-controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn-stop {
+  background-color: var(--mood-terrible);
+  color: white;
+  box-shadow: 0 4px 6px rgba(239, 68, 68, 0.3);
+}
+
+.btn-stop:hover {
+  background-color: #dc2626;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(239, 68, 68, 0.4);
+}
